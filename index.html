@@ -5,13 +5,17 @@ layout: default
   <!-- Initialize PayPal cart script -->
   <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="G9U49D2ZQKKW6"></script>
 
+  <!-- PayPal view cart -->
+  <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+    <script>
+      cartPaypal.Cart({ id: "pp-view-cart" })
+    </script>
+  </div>
+  <br>
   <p>Welcome to Oni Food Co! We make spice mixes especially designed for use with rice - just add to your pot or rice cooker and you've got an instantly flavoured meal. 
   We are back to selling spice mixes online - grab one below!</p>
-  <!-- PayPal view cart -->
-  <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
-  <script>
-    cartPaypal.Cart({ id: "pp-view-cart" })
-  </script>
+
   <!-- PayPal add to cart -->
   <paypal-add-to-cart-button data-id="KYEJWZU2KAJ2E"></paypal-add-to-cart-button>
   <script>
