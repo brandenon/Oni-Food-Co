@@ -2,7 +2,24 @@
 layout: default
 ---
 <body>
-  
+  <!-- Initialize PayPal cart script -->
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="G9U49D2ZQKKW6"></script>
+
+  <p>Welcome to Oni Food Co! We make spice mixes especially designed for use with rice - just add to your pot or rice cooker and you've got an instantly flavoured meal. 
+  We are now running a clearance sale - this is going to be the last chance to get Oni products while we regroup and see what's next for us, so make sure to stock up below! </p>
+
+  <!-- PayPal view cart -->
+  <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+  <script>
+    cartPaypal.Cart({ id: "pp-view-cart" })
+  </script>
+  <!-- PayPal add to cart -->
+  <paypal-add-to-cart-button data-id="KYEJWZU2KAJ2E"></paypal-add-to-cart-button>
+  <script>
+  cartPaypal.AddToCart({ id: "KYEJWZU2KAJ2E" })
+  </script>
+
+  <!--
   <p>Welcome to Oni Food Co! We make spice mixes especially designed for use with rice - just add to your pot or rice cooker and you've got an instantly flavoured meal. 
   As of August 7, 2025, we are on hiatus - but feel free to reach out and inquire about our products below! </p>
 
@@ -18,5 +35,6 @@ layout: default
       <button type="submit">Submit</button>
     </p>
   </form>
+  -->
   
 </body>
